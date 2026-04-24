@@ -4,6 +4,7 @@
 .nuxt
 .nitro
 .cache
+.claude
 dist
 
 # Node dependencies
@@ -26,3 +27,4 @@ logs
 # Rules
 CLAUDE.md
 AGENTS.md
+
