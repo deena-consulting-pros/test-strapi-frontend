@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/Projects/Strapi/my-strapi-first/**)",
+      "Read(//d/Projects/Strapi/my-strapi-first/src/**)",
+      "Bash(curl -s \"http://localhost:1337/api/home?populate[SEO][populate]=*&populate[Blocks][populate]=*\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('srcDir:', d.get\\('srcDir','-'\\)\\); print\\('rootDir:', d.get\\('rootDir','-'\\)\\); print\\('pagesDir:', d.get\\('pagesDir','-'\\)\\)\")",
+      "Bash(curl -s \"http://127.0.0.1:1337/api/about?populate[heroStats]=*\")",
+      "Bash(sqlite3 \"d:/Projects/Strapi/my-strapi-first/.tmp/data.db\" \".tables\")",
+      "PowerShell(Invoke-RestMethod -Uri \"http://localhost:3000/api/page-about\" -Method GET)"
+    ],
+    "additionalDirectories": [
+      "d:\\Projects\\Strapi\\my-strapi-first\\src\\api\\about\\content-types\\about",
+      "d:\\Projects\\Strapi\\my-strapi-first"
+    ]
+  }
+}
